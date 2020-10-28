@@ -1,0 +1,384 @@
+body
+    background-color: floralwhite
+section
+    background-color: pink
+    padding: 150px 0
+    .wrapper
+        .sidebar
+            height: 22cm
+            width: 100%
+            background-color: floralwhite
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 40px 0
+            justify-content: space-between
+
+            .go-to
+                text-decoration: none
+                font-size: 20px
+                position: absolute
+                top: 10px
+                right: 10px
+                display: none
+                cursor: pointer
+
+            .top
+                font-family: sans-serif
+                .set-bg
+                    height: 100px
+                    width: 100px
+                    background-position: top center
+                    background-size: cover
+                    border-radius: 50%
+                h3
+                    font-weight: bolder
+                h6
+                    font-weight: 600
+                p
+                    text-align: center
+                    position: relative
+                    &::before
+                        left: 2px
+                        content: ""
+                        width: 20px
+                        height: 20px
+                        background-color: forestgreen
+                        display: block
+                        position: absolute
+                        border-radius: 50%
+            .middle
+                ul
+                    line-height: 2.5
+                    .active
+                        a
+                            color: darken(red, 20px)
+                    li
+                        list-style-type: none
+                        a
+                            font-size: 20px
+                            text-decoration: none
+                            color: black
+                        i
+                            margin-right: 10px
+
+        .content
+            height: 22cm
+            width: 100%
+            background-color: lightgrey
+            padding: 20px 40px
+
+            .go-back
+                cursor: pointer
+                position: absolute
+                right: 5px
+                top: 5px
+                font-size: 20px
+                display: none
+                z-index: 1
+
+            .top-content
+                .first
+                    padding: 20px 20px
+                    
+                    .social-links
+                        a
+                            font-size: 20px
+                            color: black
+                            text-decoration: none
+                            background-color: floralwhite
+                            padding: 10px 10px
+                            margin: 5px
+                            border-radius: 50%
+
+                    form
+                        i
+                            position: absolute
+                            font-weight: bolder
+                            color: grey
+                            bottom: 25px
+                            left: 27px
+                        input
+                            padding: 5px 30px
+                            width: 100%
+
+                    .menu
+                        i
+                            font-size: 25px
+                            display: flex
+                            justify-content: flex-end
+                .second
+                    padding: 20px 20px
+
+                    .text
+                        display: flex
+                        justify-content: space-between
+                    .right
+                        display: flex
+                        justify-content: flex-end
+
+                        .set-bg
+                            height: 50px
+                            width: 50px
+                            border-radius: 50%
+                            background-position: top center
+                            background-size: cover
+                            margin-right: 15px
+                        i
+                            background-color: grey
+                            width: 50px
+                            height: 50px
+                            border-radius: 50%
+                            display: flex
+                            justify-content: center
+                            align-items: center
+            
+            .bottom-content
+                .header
+                    padding: 20px 20px
+                    display: flex
+                    justify-content: flex-end
+
+                    button
+                        margin-right: 20px
+                        border-radius: 40px
+                        padding: 5px 10px
+                        color: floralwhite
+                        background-color: lighten(red, 5px)
+
+                    .beside
+                        i
+                            color: grey
+
+                .bottom
+                    .card-sec
+                        display: none
+                    .owl-nav button[type=button].owl-prev
+                        display: none
+                    .owl-nav button[type=button].owl-next
+                        font-size: 30px
+                        position: absolute
+                        top: 40%
+                        right: -15px
+                    .des
+                        margin-bottom: 10px
+                    .below
+                        p
+                            font-size: .8em
+                            margin-left: 3px
+                        span
+                            font-size: .8em
+                            margin-left: 5px
+                    button
+                        background-color: transparent
+                        border: 0
+
+                    .feature
+                        margin-bottom: 0
+                        position: relative
+                        &::after
+                            content: ""
+                            width: 20px
+                            height: 20px
+                            left: 60px
+                            background-color: red
+                            border-radius: 50%
+                            position: absolute
+                    .bug
+                        margin-bottom: 0
+                        position: relative
+                        &::after
+                            content: ""
+                            width: 20px
+                            height: 20px
+                            left: 35px
+                            background-color: blue
+                            border-radius: 50%
+                            position: absolute
+                    .design
+                        margin-bottom: 0
+                        position: relative
+                        &::after
+                            content: ""
+                            width: 20px
+                            height: 20px
+                            left: 60px
+                            background-color: forestgreen
+                            border-radius: 50%
+                            position: absolute
+                    .set-bg
+                        width: 30px
+                        height: 30px
+                        background-position: center
+                        background-size: cover
+                        border-radius: 50%
+                    .card
+                        margin-top: 20px
+                        
+
+@media screen and ( max-width: 1199px)
+    .content
+        .bottom-content
+            .card-sec
+                .card-body
+                    .below
+                        .next
+                            flex-direction: column
+                            p
+                                margin-bottom: 0
+                            span
+                                font-size: .7em
+    
+@media screen and ( max-width: 991px)
+    .content
+        .bottom-content
+            .bottom
+                .card-sec
+                    .card-body
+                        line-height: 2
+                        h5
+                            font-size: 1em
+                            margin-bottom: 0
+                        p
+                            font-size: .7em
+                            margin-bottom: 0
+
+                        .feature
+                            &::after
+                                width: 10px
+                                height: 10px
+                                left: 40px
+                                bottom: 4px
+                        .bug
+                            &::after
+                                bottom: 4px
+                                width: 10px
+                                height: 10px
+                                left: 23px
+                        .design
+                            &::after
+                                left: 38px
+                                bottom: 4px
+                                width: 10px
+                                height: 10px
+                        .below
+                            .next
+                                flex-direction: row
+                                span
+                                    font-size: .5em
+
+
+@media screen and ( max-width: 991px)
+    .content
+        .bottom-content
+            .bottom
+                .card-sec
+                    .card-body
+                        .below
+                            p
+                                font-size: .5em
+                            .next
+                                flex-direction: column
+
+@media screen and ( max-width: 768px  )
+    section
+        padding: 0 !important
+        .container
+            max-width: 100% !important
+            .wrapper
+                .sidebar
+                    position: absolute
+                    z-index: 1
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    .go-to
+                        display: block
+                .content
+                    display: none
+                    .go-back
+                        display: block
+
+@media screen and ( max-width: 575px  )
+    .content
+        padding: 0 0 !important
+        .top-content
+            .first
+                .row
+                    display: grid
+                    grid-template-columns: 1fr 2fr 1fr
+
+            .second
+                .row
+                    display: grid
+                    grid-template-columns: 2fr 1fr
+                h3
+                    font-size: 1.3em
+        
+        .bottom-content
+            .bottom
+                .row
+                    .fed
+                        width: 33%
+                    .bed
+                        width: 33%
+                    .led
+                        width: 33%
+                    
+
+@media screen and ( max-width: 465px)
+    .content
+        .top-content
+            .second
+                .text
+                    h3
+                        font-size: 1em !important
+                    h5
+                        font-size: .8em !important
+                    p
+                        font-size: .5em !important
+                .right
+                    .set-bg
+                        width: 25px !important
+                        height: 25px !important
+                        margin: 4px !important
+                    i
+                        width: 25px !important
+                        margin-top: 3px
+                        height: 25px !important
+                        font-size: 10px !important
+        
+        .bottom-content
+            .bottom
+                button
+                   font-size: .7em !important
+                .card-sec 
+                    .card
+                        .card-body
+                            padding: 20px 10px !important
+                            line-height: 2
+                            .card-title
+                                font-size: .6em !important
+                            p
+                                font-size: .5em !important
+                            .feature
+                                &::after
+                                    top: 1px !important
+                                    left: 30px
+                            .bug
+                                &::after
+                                    top: 1px !important
+                                    left: 17px
+                            .design
+                                &::after
+                                    top: 1px !important
+                                    left: 28px
+                            .below
+                                .set-bg
+                                    width: 20px
+                                    height: 20px
+                                .next
+                                    span
+                                        display: none
+                    

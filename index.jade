@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+
+        link(rel="stylesheet", href="bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/owl.carousel.min.css")
+        link(rel="stylesheet", href="icofont/icofont.min.css")
+        link(rel="stylesheet", href="css/main.css")
+
+        script(src="jquery/jquery.min.js")
+        script(src="bootstrap/js/bootstrap.min.js")
+        script(src="js/owl.carousel.min.js")
+        script(src="js/main.js")
+    body
+        section
+            .container
+                .wrapper
+                    .row
+                        .col-lg-3.p-0.col-md-12.col-sm-12
+                            .sidebar
+                                i.icofont-navigation-menu.go-to
+                                .top
+                                    .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                    h3.mt-4.mb-0 Miranda
+                                    h6 Lead Designer
+                                    p Online
+                        
+                                .middle
+                                    ul
+                                        li.active
+                                            i.icofont-phoenix
+                                            a(href="") Work
+                                        li
+                                            i.icofont-castle
+                                            a(href="") Plan
+                                        li
+                                            i.icofont-circuit
+                                            a(href="") Stats
+                                        li
+                                            i.icofont-file-document
+                                            a(href="") Document
+                                        li
+                                            i.icofont-user
+                                            a(href="") Users
+                                        li
+                                            i.icofont-fix-tools
+                                            a(href="") Settings
+
+                                .bottom
+                                    button(type="submit" class="btn") LOG OUT
+
+
+
+                        .col-lg-9.p-0
+                            .content
+                                i.icofont-simple-down.go-back
+                                .top-content
+                                    .col-lg-12.col-md-12.col-sm-12
+                                        .first
+                                            .row
+                                                .col-lg-3.col-md-3.col-sm-3
+                                                    .social-links
+                                                        a(href="")
+                                                            i.icofont-envelope
+                                                        a(href="")
+                                                            i.icofont-bell-alt
+                                                .col-lg-6.col-md-6.col-sm-7
+                                                    form(action="")
+                                                        .form-group
+                                                            label(for='my-input' class="sr-only") search
+                                                            i.icofont-search
+                                                            input(type="search", name="" placeholder="search")
+                                                .col-lg-3.col-md-3.col-sm-2
+                                                    .menu
+                                                        i.icofont-navigation-menu
+
+                                    .col-lg-12
+                                        hr
+                                    .col-lg-12.col-md-12
+                                        .second
+                                            .row
+                                                .col-lg-6.col-md-8.col-sm-7
+                                                    .text
+                                                        .one.col-md-8.col-sm-8
+                                                            h3.mb-0 Project Title
+                                                            p Short description
+                                                        .two.col-md-4.col-sm-4
+                                                            h5.mb-0 DUE DATE
+                                                            p Mon,Aug 28,2017
+                                                .col-lg-6.col-md-4.col-sm-5
+                                                    .right
+                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                        i.icofont-plus
+
+                                    .col-lg-12
+                                        hr
+
+                                .bottom-content
+                                    .col-lg-12.col-md-12.col-sm-12
+                                        .header
+                                            .row
+                                                button(type="submit") CREATE NEW TICKET
+                                                .beside
+                                                    i.icofont-plus.mr-2
+                                                    span Add column
+
+                                    .col-lg-12.col-md-12.col-sm-12
+                                        .bottom
+                                            .row
+                                                .col-lg-4.col-md-4.col-sm-4.led
+                                                    button.panel-button(data-panelid="panel1") Backlog
+                                                        i.icofont-simple-down.ml-2
+                                                    .card-sec#panel1.shadow-lg
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.design Design
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        .next.d-flex
+                                                                            p 08/09/2020
+                                                                            span 2 Subtasks
+                                                            
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.bug Bug
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        .next.d-flex
+                                                                            p 08/09/2020
+                                                                            span 2 Subtasks
+
+                                                .col-lg-4.col-md-4.col-sm-4.fed
+                                                    button.panel-button(data-panelid="panel2") In Progress
+                                                        i.icofont-simple-down.ml-2
+                                                    .card-sec#panel2.shadow-lg
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.feature Feature
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        p 08/09/2020
+
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.bug Bug
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        p 08/09/2020
+
+
+                                                .col-lg-4.col-md-4.col-sm-4.bed
+                                                    button.panel-button(data-panelid="panel3") Review
+                                                        i.icofont-simple-down.ml-2
+                                                    .card-sec.owl-carousel#panel3.shadow-lg
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.bug Bug
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        p 09/01/2019
+
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.feature Feature
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        p 09/01/2019
+
+                                                        .card
+                                                            .card-body
+                                                                h5.card-title Task Name
+                                                                p.design Design
+                                                                p.des Description
+                                                                .below
+                                                                    .row.m-0
+                                                                        .set-bg(data-setbg="img/6f1af4032fce2fd0d8de9e33b59621b9.jpg")
+                                                                        p 09/01/2019
+
+
